@@ -1,13 +1,75 @@
-var img = ["https://media.istockphoto.com/vectors/happy-fathers-day-man-open-shirt-to-show-super-dad-vector-id931805078?k=6&m=931805078&s=612x612&w=0&h=Ec0VoyAs9SlYp-xXTd9VPDEaJ-tULt-BLqpXyQmqDME=",
-  "https://static.vecteezy.com/system/resources/previews/000/126/700/original/super-mom-vector.jpg",
-  "https://image.shutterstock.com/z/stock-vector-big-brother-reading-to-younger-brother-vector-22804474.jpg"];
-  var names = ["Rani","Raj","Jason&Jadon"]
-var i = 1;
-function move() {
-  document.getElementById("album1").src = img[i]; 
-  document.getElementById("name").src = names[i]; 
-i++;
-if (i==3)
-  {
-    i=0; }
+canvas = document.getElementById("Can-Can");
+ ctx = canvas.getContext("2d");
+color = "blue";
+ctx.beginPath();
+ctx.strokeStyle = color;
+ctx.lineWidth = 10;
+ctx.arc(200, 200, 40 ,0 , 2*Math.PI);
+ctx.stroke();
+canvas.addEventListener("mousedown", mouseDown);
+function mouseDown(e){
+    mouse_x = e.clientX - canvas.offsetLeft;
+    mouse_y =  e.clientY - canvas.offsetTop;
+    console.log("X = " + mouse_x + " ,Y =  " + mouse_y);
+    circle(mouse_x , mouse_y);  
+}
+canvas = document.getElementById("Can-Can");
+ ctx = canvas.getContext("2d");
+color = "yellow";
+ctx.beginPath();
+ctx.strokeStyle = color;
+ctx.lineWidth = 10;
+ctx.arc(250, 245, 40 ,0 , 2*Math.PI);
+ctx.stroke();
+canvas.addEventListener("mousedown", mouseDown);
+function mouseDown(e){
+    mouse_x = e.clientX - canvas.offsetLeft;
+    mouse_y =  e.clientY - canvas.offsetTop;
+    console.log("X = " + mouse_x + " ,Y =  " + mouse_y);
+    circle(mouse_x , mouse_y);  
+}
+canvas = document.getElementById("Can-Can");
+ ctx = canvas.getContext("2d");
+color = "black";
+ctx.beginPath();
+ctx.strokeStyle = color;
+ctx.lineWidth = 10;
+ctx.arc(295, 200, 40 ,0 , 2*Math.PI);
+ctx.stroke();
+canvas.addEventListener("mousedown", mouseDown);
+function mouseDown(e){
+    mouse_x = e.clientX - canvas.offsetLeft;
+    mouse_y =  e.clientY - canvas.offsetTop;
+    console.log("X = " + mouse_x + " ,Y =  " + mouse_y);
+    circle(mouse_x , mouse_y);  
+}
+canvas = document.getElementById("Can-Can");
+ ctx = canvas.getContext("2d");
+color = "green";
+ctx.beginPath();
+ctx.strokeStyle = color;
+ctx.lineWidth = 10;
+ctx.arc(340, 245, 40 ,0 , 2*Math.PI);
+ctx.stroke();
+canvas.addEventListener("mousedown", mouseDown);
+function mouseDown(e){
+    mouse_x = e.clientX - canvas.offsetLeft;
+    mouse_y =  e.clientY - canvas.offsetTop;
+    console.log("X = " + mouse_x + " ,Y =  " + mouse_y);
+    circle(mouse_x , mouse_y);  
+}
+canvas = document.getElementById("Can-Can");
+ ctx = canvas.getContext("2d");
+color = "red";
+ctx.beginPath();
+ctx.strokeStyle = color;
+ctx.lineWidth = 10;
+ctx.arc(390, 200, 40 ,0 , 2*Math.PI);
+ctx.stroke();
+canvas.addEventListener("mousedown", mouseDown);
+function mouseDown(e){
+    mouse_x = e.clientX - canvas.offsetLeft;
+    mouse_y =  e.clientY - canvas.offsetTop;
+    console.log("X = " + mouse_x + " ,Y =  " + mouse_y);
+    circle(mouse_x , mouse_y);  
 }
